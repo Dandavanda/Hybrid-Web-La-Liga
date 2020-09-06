@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <center><img src="https://www.thesportsdb.com/images/media/league/logo/b84z7h1565091817.png" class="img-toolbar"></center>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <div class="banner">
+    <div class="banner-f">My Favorite Team</div>
+  </div>
+
+  <ion-row>
+    <ion-col>
+      <div  class="list">
+        <ion-row>
+          <ion-col size="3"><img src="{{fav.badge}}" alt="badge"></ion-col>
+          <ion-col size="9"><center><h1>{{fav.name}}</h1></center></ion-col>
+        </ion-row>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

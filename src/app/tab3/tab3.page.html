@@ -1,0 +1,60 @@
+<ion-content [fullscreen]="true" *ngFor="let w of leagues.leagues" color="secondary">
+  <div style=" background-image: url({{w.strFanart4}}); height: 400px; background-size: cover; border-radius: 0% 0% 20% 0%;">
+    <h1>{{w.strLeague}}</h1>
+
+    <ion-fab horizontal="start" vertical="center" slot="fixed">
+      <ion-fab-button color="primary">
+        <ion-icon md="globe-outline" ios="globe-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="end">
+        <ion-fab-button color="light">
+          <a href="{{w.strFacebook}}"><ion-icon name="logo-facebook"></ion-icon></a>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <a href="{{w.strTwitter}}"></a>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <a href="{{w.strYoutube}}"></a>
+          <ion-icon name="logo-youtube"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light">
+          <a href="{{w.strRSS}}"><ion-icon name="logo-rss"></ion-icon></a>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+    </div> <br>
+
+    <ion-row>
+      <ion-col size="4">
+        <div class="card">
+          <center>
+            <img src="{{w.strBadge}}" alt="badge">
+          <p class="blue">Badge</p>
+          </center>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="card">
+          <center>
+            <img src="{{w.strTrophy}}" alt="tropi">
+          <p class="blue">Trophy</p>
+          </center>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="card">
+          <center>
+            <h3 style="color:#455FB5">{{w.strCountry}}</h3><br>
+          <p class="blue">Country</p>
+          </center>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <div class="container">
+      <h3 colo>What's?</h3>
+      <center><img src="{{w.strLogo}}" alt="logo"></center>
+      <p>{{w.strDescriptionEN}}</p>
+    </div>
+</ion-content>

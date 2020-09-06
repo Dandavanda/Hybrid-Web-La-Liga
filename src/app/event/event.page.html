@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button> back</ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-list *ngFor="let e of evList">
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            {{e.strEvent}} 
+          </ion-col>
+          <ion-col>
+            {{e.dateEvent}} 
+            {{e.strTime}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

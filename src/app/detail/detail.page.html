@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button> back</ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <center><h1>{{liList.name}}</h1> <br>
+  <img src="{{liList.badge}}" alt="">
+  </center>
+  <br>
+  <p>{{liList.desc}}</p>
+  <img src="{{liList.jersey}}" alt="">
+<img src="{{liList.banner}}" alt="banner">
+
+<ion-fab horizontal="end" vertical="center" slot="fixed">
+  <ion-fab-button color="primary" (click)="save()">
+    <ion-icon name="heart-circle-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+</ion-content>
