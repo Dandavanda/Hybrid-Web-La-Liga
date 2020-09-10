@@ -8,7 +8,7 @@ import { Router, NavigationExtras } from '@angular/router';
   styleUrls: ['./event.page.scss'],
 })
 export class EventPage implements OnInit {
-  public evList;
+  evList: any;
 
   constructor(private ligaService: LigaService,private router:Router) {}
 

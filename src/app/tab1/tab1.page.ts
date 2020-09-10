@@ -8,7 +8,7 @@ import { Router, NavigationExtras } from '@angular/router';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  public liList;
+  liList: any;
 
 
   constructor(private ligaService: LigaService,private router:Router) {}
